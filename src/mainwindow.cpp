@@ -34,10 +34,10 @@ int lengthByAttenuation(
 }
 
 void MainWindow::on_pushButton_calc_clicked()
-{
+{ 
     const double kmAttenuation = 0.205; // 0.19 - 0.22
 
-    double exitLvl = 1;
+    double exitLvl = ui->lineEdit_exitLvl->text().toDouble();
     double recievedLvl = 1;
     int connectionsCount = 1;
     double avgConnectionLoss = 1;

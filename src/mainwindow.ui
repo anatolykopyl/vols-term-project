@@ -37,40 +37,17 @@
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="4" column="1">
-      <widget class="QLineEdit" name="lineEdit_extraLoss"/>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="lineEdit_connectionsCount"/>
-     </item>
-     <item row="4" column="2">
-      <widget class="QLabel" name="label_extraLoss_2">
+     <item row="5" column="2">
+      <widget class="QLabel" name="label_systemBuffer_2">
        <property name="text">
         <string>дБ</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_avgSpliceLoss">
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_exitLvl_2">
        <property name="text">
-        <string>a_р.с.</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="2">
-      <widget class="QLabel" name="label_avgConnectionLoss_2">
-       <property name="text">
-        <string>дБ</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="lineEdit_exitLvl"/>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_exitLvl">
-       <property name="text">
-        <string>p_пер</string>
+        <string>дБм</string>
        </property>
       </widget>
      </item>
@@ -81,8 +58,8 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
-      <widget class="QLineEdit" name="lineEdit_avgConnectionLoss"/>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEdit_connectionsCount"/>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_recievedLvl">
@@ -90,6 +67,16 @@
         <string>p_ф.п.у.</string>
        </property>
       </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_avgConnectionLoss_2">
+       <property name="text">
+        <string>дБ</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="lineEdit_systemBuffer"/>
      </item>
      <item row="1" column="1">
       <widget class="QLineEdit" name="lineEdit_recievedLvl"/>
@@ -101,17 +88,41 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label_exitLvl_2">
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_avgSpliceLoss">
        <property name="text">
-        <string>дБм</string>
+        <string>a_р.с.</string>
        </property>
       </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit_avgConnectionLoss"/>
      </item>
      <item row="1" column="2">
       <widget class="QLabel" name="label_recievedLvl_2">
        <property name="text">
         <string>дБм</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_avgSpliceLoss_2">
+       <property name="text">
+        <string>a_н.с.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLabel" name="label_avgSpliceLoss_3">
+       <property name="text">
+        <string>дБ</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_exitLvl">
+       <property name="text">
+        <string>p_пер</string>
        </property>
       </widget>
      </item>
@@ -122,13 +133,36 @@
        </property>
       </widget>
      </item>
-     <item row="5" column="1">
-      <widget class="QLineEdit" name="lineEdit_systemBuffer"/>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_exitLvl"/>
      </item>
-     <item row="5" column="2">
-      <widget class="QLabel" name="label_systemBuffer_2">
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="lineEdit_avgSpliceLoss"/>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLabel" name="label_extraLoss_2">
        <property name="text">
         <string>дБ</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEdit_extraLoss"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_constructionLength">
+       <property name="text">
+        <string>l_с.д.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="lineEdit_constructionLength"/>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLabel" name="label_constructionLength_2">
+       <property name="text">
+        <string>км</string>
        </property>
       </widget>
      </item>
