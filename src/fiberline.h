@@ -1,11 +1,9 @@
 #ifndef FIBERLINE_H
 #define FIBERLINE_H
 
-
-class FiberLine
-{
+class FiberLine {
 public:
-    FiberLine();
+  FiberLine();
 };
 
 #endif // FIBERLINE_H

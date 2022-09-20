@@ -1,6 +1,3 @@
 #include "fiberline.h"
 
-FiberLine::FiberLine()
-{
-
-}
+FiberLine::FiberLine() {}
