@@ -26,10 +26,38 @@
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="4" column="1">
-        <widget class="QLineEdit" name="lineEdit_avgConnectionLoss">
+       <item row="7" column="2">
+        <widget class="QLabel" name="label_avgSpliceLoss_3">
          <property name="text">
-          <string>0.2</string>
+          <string>дБ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="lineEdit_systemBuffer">
+         <property name="text">
+          <string>5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit_exitLvl">
+         <property name="text">
+          <string>2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_recievedLvl">
+         <property name="text">
+          <string>p&lt;sub&gt;ф.п.у.&lt;/sub&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_avgSpliceLoss_2">
+         <property name="text">
+          <string>a&lt;sub&gt;н.с.&lt;/sub&gt;</string>
          </property>
         </widget>
        </item>
@@ -40,17 +68,10 @@
          </property>
         </widget>
        </item>
-       <item row="5" column="2">
-        <widget class="QLabel" name="label_extraLoss_2">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_exitLvl">
          <property name="text">
-          <string>дБ</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="1">
-        <widget class="QLineEdit" name="lineEdit_extraLoss">
-         <property name="text">
-          <string>1</string>
+          <string>p&lt;sub&gt;пер&lt;/sub&gt;</string>
          </property>
         </widget>
        </item>
@@ -61,10 +82,24 @@
          </property>
         </widget>
        </item>
-       <item row="8" column="1">
-        <widget class="QLineEdit" name="lineEdit_constructionLength">
+       <item row="5" column="2">
+        <widget class="QLabel" name="label_extraLoss_2">
          <property name="text">
-          <string>10</string>
+          <string>дБ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_extraLoss">
+         <property name="text">
+          <string>a&lt;sub&gt;д&lt;/sub&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_recievedLvl_2">
+         <property name="text">
+          <string>дБм</string>
          </property>
         </widget>
        </item>
@@ -82,52 +117,10 @@
          </property>
         </widget>
        </item>
-       <item row="7" column="2">
-        <widget class="QLabel" name="label_avgSpliceLoss_3">
-         <property name="text">
-          <string>дБ</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="0">
-        <widget class="QLabel" name="label_avgSpliceLoss_2">
-         <property name="text">
-          <string>a&lt;sub&gt;н.с.&lt;/sub&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="1">
-        <widget class="QLineEdit" name="lineEdit_avgSpliceLoss">
-         <property name="text">
-          <string>0.1</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label_kmAttenuation">
-         <property name="text">
-          <string>a</string>
-         </property>
-        </widget>
-       </item>
        <item row="0" column="2">
         <widget class="QLabel" name="label_kmAttenuation_2">
          <property name="text">
           <string>дБ</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="label_exitLvl">
-         <property name="text">
-          <string>p&lt;sub&gt;пер&lt;/sub&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="1">
-        <widget class="QLineEdit" name="lineEdit_systemBuffer">
-         <property name="text">
-          <string>5</string>
          </property>
         </widget>
        </item>
@@ -138,17 +131,10 @@
          </property>
         </widget>
        </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label_connectionsCount">
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="lineEdit_constructionLength">
          <property name="text">
-          <string>n&lt;sub&gt;р.с.&lt;/sub&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="0">
-        <widget class="QLabel" name="label_extraLoss">
-         <property name="text">
-          <string>a&lt;sub&gt;д&lt;/sub&gt;</string>
+          <string>10</string>
          </property>
         </widget>
        </item>
@@ -156,13 +142,6 @@
         <widget class="QLabel" name="label_avgSpliceLoss">
          <property name="text">
           <string>a&lt;sub&gt;р.с.&lt;/sub&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLabel" name="label_recievedLvl_2">
-         <property name="text">
-          <string>дБм</string>
          </property>
         </widget>
        </item>
@@ -176,17 +155,10 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_recievedLvl">
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_connectionsCount">
          <property name="text">
-          <string>p&lt;sub&gt;ф.п.у.&lt;/sub&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="2">
-        <widget class="QLabel" name="label_systemBuffer_2">
-         <property name="text">
-          <string>дБ</string>
+          <string>n&lt;sub&gt;р.с.&lt;/sub&gt;</string>
          </property>
         </widget>
        </item>
@@ -197,6 +169,13 @@
          </property>
         </widget>
        </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_kmAttenuation">
+         <property name="text">
+          <string>a</string>
+         </property>
+        </widget>
+       </item>
        <item row="8" column="0">
         <widget class="QLabel" name="label_constructionLength">
          <property name="text">
@@ -204,10 +183,52 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="1">
-        <widget class="QLineEdit" name="lineEdit_exitLvl">
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEdit_avgConnectionLoss">
          <property name="text">
-          <string>2</string>
+          <string>0.2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEdit_extraLoss">
+         <property name="text">
+          <string>1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="lineEdit_avgSpliceLoss">
+         <property name="text">
+          <string>0.1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLabel" name="label_systemBuffer_2">
+         <property name="text">
+          <string>дБ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLineEdit" name="lineEdit_spectralWidth">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_spectralWidth">
+         <property name="text">
+          <string>Δν</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="2">
+        <widget class="QLabel" name="label_spectralWidth_2">
+         <property name="text">
+          <string>ГГц</string>
          </property>
         </widget>
        </item>
@@ -229,9 +250,67 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
+        <widget class="QLabel" name="label_resultTitle">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Длина регенерационного участка (км)</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_resultAttenuation">
+           <property name="text">
+            <string>По затуханию</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_resultAttenuation">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_resultDispersion">
+           <property name="text">
+            <string>По дисперсии</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_resultDispersion">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
-          <widget class="QLabel" name="label">
+          <widget class="QLabel" name="label_result">
            <property name="text">
             <string>Результат</string>
            </property>
@@ -239,15 +318,11 @@
          </item>
          <item>
           <widget class="QLineEdit" name="lineEdit_result">
-           <property name="readOnly">
+           <property name="enabled">
             <bool>true</bool>
            </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>км</string>
+           <property name="readOnly">
+            <bool>true</bool>
            </property>
           </widget>
          </item>
