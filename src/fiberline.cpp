@@ -31,11 +31,11 @@ double FiberLine::lengthByAttenuation() {
 
 double FiberLine::lengthByDispersion() {
   double lightSpeed = 299792.458; // km/sec
-  double impulseWidth = 1; // change me
-  double waveLength = 1550;
+  double impulseWidth = 0.096;
+  double waveLength = 1.55;
   double chromaDispersion = -6.5; // -(5-8)
 
-  return ((2 * M_PI * lightSpeed * pow(impulseWidth, 2)) /
+  return abs((2 * M_PI * lightSpeed * pow(impulseWidth, 2)) /
           (pow(waveLength, 2) * chromaDispersion *
            sqrt(1 + 4 * pow(M_PI, 2) * pow(spectralWidth, 2) *
                         pow(impulseWidth, 2))));

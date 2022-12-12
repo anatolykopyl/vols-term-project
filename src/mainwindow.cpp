@@ -28,11 +28,13 @@ void MainWindow::on_pushButton_calc_clicked() {
       ui->lineEdit_constructionLength->text().toDouble();
   double spectralWidth = ui->lineEdit_spectralWidth->text().toDouble();
 
-  FiberLine *fiberLine = new FiberLine(
-      exitLvl, recievedLvl, connectionsCount, avgConnectionLoss, extraLoss,
-      systemBuffer, kmAttenuation, avgSpliceLoss, constructionLength, spectralWidth);
+  FiberLine *fiberLine =
+      new FiberLine(exitLvl, recievedLvl, connectionsCount, avgConnectionLoss,
+                    extraLoss, systemBuffer, kmAttenuation, avgSpliceLoss,
+                    constructionLength, spectralWidth);
 
-  ui->lineEdit_resultAttenuation->setText(QString::number(fiberLine->lengthByAttenuation()));
+  ui->lineEdit_resultAttenuation->setText(
+      QString::number(fiberLine->lengthByAttenuation()));
   ui->lineEdit_resultDispersion->setText(
       QString::number(fiberLine->lengthByDispersion()));
 
